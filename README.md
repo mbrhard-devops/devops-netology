@@ -30,6 +30,8 @@ cd devops-netology
 git config --global user.name "Viktor M"
 git config --global user.email mbrhard.devops@gmail.com
 git status
+git diff
+git diff --staged
 git add .
 git commit -m "Home 15-1 v.1"
 git push -u origin main
