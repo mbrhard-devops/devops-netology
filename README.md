@@ -37,5 +37,22 @@ git commit -m "Home 15-1 v.1"
 git push -u origin main
 ```
 
-
 ---
+
+### Создание файлов .gitignore и второго коммита
+```
+
+*.tfstate, *.tfstate.* - Содержат актуальное описание инфраструктуры
+*.tfvars, *.tfvars.json - Переменные с параметрами развертывания (пароли, приватные ключи) 
+
+.terraform/ - Локальная директория с плагинами и модулями
+.terraform.tfstate.lock.info - Файл блокировки состояния
+crash.log, crash.*.log - Логи сбоев Terraform
+
+override.tf, *_override.tf - Файлы локального переопределения ресурсов
+.terraformrc, terraform.rc - Персональные настройки CLI Terraform (прокси, плагины)
+
+*.dot — файлы графов
+planout — файлы планов
+
+```
